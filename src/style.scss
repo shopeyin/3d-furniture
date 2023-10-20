@@ -1,0 +1,301 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+$breakpoints: (
+  'phone': 768px,
+  'tablet': 1024px,
+  'desktop': 1920px,
+) !default;
+
+// $breakpoints: (small: 320px, medium: 768px, large: 1024px);
+// @include media("height>small", "height<=medium") {
+// height: 50%;
+// }
+
+@import '../node_modules/include-media/dist/include-media';
+
+
+html {
+ 
+   font-size: calc(100vw / 1920 * 10);
+  
+
+   @include media('<=phone') {
+    font-size: calc(100vw / 750 * 10);
+    
+    
+  }
+ 
+ }
+a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
+  button{
+    background: none;
+    outline: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+
+// body{
+//     // line-height: ;
+// }
+.webgl
+{
+   position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+   
+}
+
+
+.color{
+    position: absolute;
+    top:50%;
+    // left: 50%;
+    // z-index: 1;
+}
+
+.box{
+    width: 100px;
+     height: 100px; 
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.white{
+    background-color: white; 
+}
+
+
+// section{
+//     height: 100vh;
+//     border:1px solid red;
+//     display:flex;
+//     align-items: center;
+   
+// }
+
+
+// .container{
+//     width: min(144rem, 100%);
+//     margin-inline: auto;
+// }
+
+
+// .hero__header {
+//     border:1px solid red;
+//     min-height:25.5rem;
+//     max-width: 75rem;
+
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 5rem;
+
+// }
+
+// .hero__description h1{
+//     color:  #FCFDFD;
+//     text-align: center;
+//     /* Heading/H1 Regular */
+//     font-size: 10rem;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 90%; /* 5.4rem */
+//     letter-spacing: -0.5rem;
+// }
+// .hero__description h1 span{
+//     font-style: italic;
+// }
+// .hero__button{
+//     display: flex;
+//     padding: 0.8rem 3.6rem;
+//     align-items: center;
+//     gap: 0.8rem;
+//     border-radius: 0.8rem;
+//     background:  #F8F4E7;
+// }
+
+// section.presence{
+//     justify-content: end;
+//     background-color: yellow;
+
+//     @include media('<=phone') {
+//         justify-content: end;
+//         align-items: end;
+        
+//       }
+// }
+// .presence__header{
+//     border:1px solid red;
+//     // min-height:39rem;
+//     max-width: 75rem;
+
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 2.5rem;
+// }
+// .presence__description{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 3.6rem;
+
+// }
+
+// .presence__description h2{
+//     color:  #323334;
+//     text-align: center;
+//     /* Heading/H2 Regular */
+   
+//     font-size: 9rem;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 100%; /* 7.2rem */
+//     letter-spacing: -0.36rem;
+// }
+
+// .presence__description h2 span{
+//     font-style: italic;
+// }
+
+// .presence__description p{
+//     color:  #323334;
+//     text-align: center;
+//     /* Paragraph/Regular */
+//     font-family: Neue Montreal;
+//     font-size: 2.5rem;
+//     font-style: normal;
+//     font-weight: 400;
+    
+// }
+
+// .presence__button{
+//     display: flex;
+//     padding: 0.8rem 3.6rem;
+//     align-items: center;
+//     gap: 0.8rem;
+//     border-radius: 0.8rem;
+//     border: 1px solid  #DFDEDB
+// }
+
+
+// .native__description{
+//     display: inline-flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 4.8rem;
+//     max-width: 80.5rem;
+//     border: 1px solid red
+  
+// }
+
+// .native__description h4{
+//     color:  #FCFDFD;
+//     text-align: center;
+//     /* Heading/H4 */
+//     font-size: 10rem;
+//     font-style: normal;
+//     font-weight: 400;
+   
+// }
+
+// .native__content{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 2.4rem;
+// }
+
+// .native__content p{
+//     color:  #DFDEDB;
+//     /* Paragraph/Regular */
+//     font-size: 2.5rem;
+//     font-style: normal;
+//     font-weight: 400;
+    
+// }
+
+// // .native__button{
+// //     display: flex;
+// //     align-items: center;
+// //     gap: 0.8rem;
+// //     border: 1px solid  #DFDEDB
+// // }
+
+// section.lookBook{
+//     justify-content: end;
+
+//     @include media('<=phone') {
+//         justify-content: center;
+//         align-items: end;
+//      }
+// }
+// .lookBook__description{
+//     border: 1px solid red;
+//     min-height: 15rem;
+//     max-width: 65rem;
+
+// }
+
+// .lookBook__description h3{
+//     color:  #F5F4F3;
+//     text-align: center;
+//     /* Heading/H3 */
+
+//     font-size: 10rem;
+//     font-style: normal;
+//     font-weight: 400;
+//     margin: 4rem;
+
+// }
+// .lookBook__description p{
+//     color:  #DFDEDB;
+//     text-align: center;
+//     /* Paragraph/Regular */
+//     font-size: 2.5rem;
+//     font-style: normal;
+//     font-weight: 400;
+    
+// }
+
+// .information__detail{
+//     min-height: 25rem;
+//     border: 1px solid red;
+//     max-width: 75rem;
+//     display: inline-flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 3.6rem;
+// }
+
+// .information__detail h2{
+//     color:  #323334;
+//     text-align: center;
+//     /* Heading/H2 Regular */
+//     font-size: 7rem;
+//     font-style: normal;
+//     font-weight: 400;
+// }
+// .information__detail p{
+//     color:  #323334;
+//     text-align: center;
+//     font-size: 2.5rem;
+//     font-style: normal;
+//     font-weight: 400;
+   
+// }
